@@ -1,0 +1,23 @@
+.MuiSwitch-thumb {
+  border: 1px solid var(--border-light) !important;
+  background: var(--white) !important;
+  box-shadow: none !important;
+}
+
+.MuiSwitch-track {
+  background: var(--border-light);
+  //opacity: 1 !important
+}
+
+.Mui-checked {
+  //background:  !important;
+  //opacity: 1 !important;
+}
+
+label > span,
+.MuiFormControlLabel-labelPlacementEnd > span, .MuiFormControlLabel-root > span {
+  color: #A0A3A6;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
