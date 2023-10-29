@@ -1,12 +1,15 @@
 import React, {useEffect, useState} from 'react';
 
 import styles from './DroneInfo.module.scss';
-import whiteDroneInfo from '../../constants/images/white-drone-info.png';
-import blackDroneInfo from '../../constants/images/black-drone-info.png';
-import {useSelector} from "react-redux";
+import whiteDroneInfo from '../../constants/images/white-drone-info.svg';
+import blackDroneInfo from '../../constants/images/black-drone-info.svg';
+import {useDispatch, useSelector} from "react-redux";
+import {dronesHistoryActions} from "../../store/slices/dronesHistorySlice";
 
 const DroneInfo = ({drone, type}) => {
     const {selectedDroneId} = useSelector(state => state.dronesHistory);
+
+    const dispatch = useDispatch();
 
     const [elapsedTime, setElapsedTime] = useState(0);
 
@@ -38,6 +41,10 @@ const DroneInfo = ({drone, type}) => {
 
     return (
         <div
+            onClick={() => {
+                    dispatch(dronesHistoryActions.setSelectedDroneId(drone?.droneId));
+                    dispatch(dronesHistoryActions.setSelectedDroneType(type));
+            }}
             className={`${styles.droneInfo} ${selectedDroneId === drone?.droneId ? styles.active : ''}`}
         >
             <div className={styles.droneInfo_titleContainer}>

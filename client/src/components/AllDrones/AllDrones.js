@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 import styles from './AllDrones.module.scss';
 import DroneInfo from "../DroneInfo/DroneInfo";

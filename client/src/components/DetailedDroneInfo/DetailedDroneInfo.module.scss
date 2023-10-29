@@ -46,12 +46,22 @@
       }
     }
 
-    & > p {
-      color: var(--text-gray-modal-subtitle);
-      font-family: Inter, sans-serif;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 24px; /* 150% */
+    & > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      & > img {
+        cursor: pointer;
+      }
+
+      & > p {
+        color: var(--text-gray-modal-subtitle);
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+      }
     }
   }
 

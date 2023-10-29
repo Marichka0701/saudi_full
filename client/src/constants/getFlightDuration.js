@@ -2,8 +2,6 @@ export const getFlightDuration = (startTime, endTime) => {
     const start = new Date(startTime).getTime();
     const end = new Date(endTime).getTime();
 
-    console.log(startTime, endTime, start, end)
-
     if (!isNaN(start) && !isNaN(end)) {
         const timeDifference = end - start;
         const seconds = Math.floor((timeDifference / 1000) % 60);

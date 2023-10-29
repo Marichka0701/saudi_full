@@ -24,7 +24,7 @@ const ShowFilter = ({
                     label="Black Drones"
                 />
                 <FormControlLabel
-                    control={<Switch style={{color: radarsChecked ? '#3B82F6' : '#E7E8E9'}} checked={radarsChecked} onChange={() => setRadarsChecked(!radarsChecked)} />}
+                    control={<Switch checked={radarsChecked} onChange={() => setRadarsChecked(!radarsChecked)} />}
                     label="Radars"
                 />
             </div>

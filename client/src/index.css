@@ -11,3 +11,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* modal for drone */
+.modal {
+  padding: 12px;
+  width: 320px;
+  border-radius: 6px;
+  background: #FFFFFF;
+}
+
+.modal-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-title {
+  color: #1C2540;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.modal-drone-id {
+  color: #9CA8B4;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.modal-description  {
+  color: #9CA8B4;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.modal-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal-content-left, .modal-content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-description > span {
+  color: #1C2540;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}

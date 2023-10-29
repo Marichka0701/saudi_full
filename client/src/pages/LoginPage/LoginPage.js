@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import logo from '../../constants/images/miniSidebar/abu-dabi.svg';
 import styles from './LoginPage.module.scss'
 import {authService} from "../../services/auth.service";
 
@@ -26,6 +27,8 @@ const LoginPage = () => {
         <div className={styles.loginPage_wrapper}>
             <div className={styles.loginPage_wrapper_login}>
                 <div className={styles.loginPage_wrapper_login_title}>
+                    <img src={logo} alt="abu dabi logo"/>
+
                     <div>
                         <h1 className={styles.title}>Login to your account</h1>
                     </div>

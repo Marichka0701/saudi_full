@@ -26,15 +26,15 @@ const SidebarDrones = () => {
 
                 <ul className={styles.sidebar_top_options}>
                     <li
-                        className={selectedOption === 'All' && styles.active}
+                        className={selectedOption === 'All' ? styles.active : ''}
                         onClick={() => setSelectedOption('All')}
                     >All</li>
                     <li
-                        className={selectedOption === 'White' && styles.active}
+                        className={selectedOption === 'White' ? styles.active : ''}
                         onClick={() => setSelectedOption('White')}
                     >White</li>
                     <li
-                        className={selectedOption === 'Black' && styles.active}
+                        className={selectedOption === 'Black' ? styles.active : ''}
                         onClick={() => setSelectedOption('Black')}
                     >Black</li>
                 </ul>

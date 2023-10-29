@@ -20,7 +20,7 @@
 
   &:hover {
     border-left: 4px solid var(--accent-primary, #2563EB);
-    background: var(--hover-lighblue);
+    background: rgba(240, 246, 255, 0.4);
     transition: 0.3s;
   }
 
