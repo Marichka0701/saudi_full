@@ -28,7 +28,6 @@ const AppMapBox = ({selectedOption}) => {
     useEffect(() => {
         if (mapRef.current && selectedDroneId && selectedDroneType) {
             const layers = mapRef.current.getStyle().layers;
-            console.log(layers)
             layers.forEach((layer) => {
                 if (layer.id.endsWith('_circle')) {
                     mapRef.current.removeLayer(layer.id);
