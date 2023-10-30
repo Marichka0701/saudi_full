@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './MiniSidebar.module.scss';
-import logo from '../../constants/images/miniSidebar/abu-dabi.svg';
+import polygon from '../../constants/images/miniSidebar/polygon.png';
 import menu from '../../constants/images/miniSidebar/menu.svg';
 import menuActive from '../../constants/images/miniSidebar/menu-active.svg';
 import drone from '../../constants/images/miniSidebar/drone.svg';
@@ -14,7 +14,8 @@ const MiniSidebar = ({selectedOption, setSelectedOption}) => {
     return (
         <div className={styles.miniSidebar}>
             <div className={styles.miniSidebar_ad}>
-                <img src={logo} alt="abu dabi logo"/>
+                <img src={polygon} alt="polygon icon"/>
+                <span>AD</span>
             </div>
 
             <div className={styles.miniSidebar_options}>
